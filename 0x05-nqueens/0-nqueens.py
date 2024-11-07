@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """N queens solution finder module."""
 
+
 import sys
 
 def get_input():
@@ -26,7 +27,7 @@ def is_attacking(queen1, queen2):
     """Checks if two queens are attacking each other."""
     return (queen1[0] == queen2[0] or  # same row
             queen1[1] == queen2[1] or  # same column
-            abs(queen1[0] - queen2[0]) == abs(queen1[1] - queen2[1]))  # same diagonal
+            abs(queen1[0] - queen2[0]) == abs(queen1[1] - queen2[1]))  # samediagonal
 
 def solve_n_queens(n):
     """Finds all solutions for the N queens problem.

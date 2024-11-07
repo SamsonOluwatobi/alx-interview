@@ -3,6 +3,7 @@
 import sys
 import re
 
+
 def print_statistics(total_file_size, status_codes_stats):
     '''Prints the accumulated statistics of the HTTP request log.'''
     print('File size: {:d}'.format(total_file_size))
