@@ -10,10 +10,10 @@ if (process.argv.length > 2) {
       console.error(err);
       return;
     }
-    
+
     // Parse the response body to extract character URLs
     const charactersURL = JSON.parse(body).characters;
-    
+
     // Map character URLs to Promises that resolve with character names
     const characterNames = charactersURL.map(
       url => new Promise((resolve, reject) => {
@@ -33,5 +33,5 @@ if (process.argv.length > 2) {
       .catch(allErr => console.error(allErr));
   });
 } else {
-  console.log("Usage: ./0-starwars_characters.js <Movie ID>");
+  console.log('Usage: ./0-starwars_characters.js <Movie ID>');
 }
